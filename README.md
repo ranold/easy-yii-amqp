@@ -41,7 +41,7 @@ return [
 
 ## Usage ##
 
-EasyYiiAmqp provides a very basic interface for sending messages and running callbacks on recieved messages. 
+EasyYiiAmqp provides a very basic interface for sending messages and running callbacks on received messages. 
 
 ```php
 public function actionSend()
@@ -52,10 +52,10 @@ public function actionSend()
 ```
 
 ```php
-public function actionRecieve()
+public function actionReceive()
 {
     Yii::app()->easymq->consume(function ($message) {
-      echo "// Recieved '{$message->body}'" . PHP_EOL;
+      echo "// Received '{$message->body}'" . PHP_EOL;
     }, 'QueueName');
     
     // continiously wait for new messages
