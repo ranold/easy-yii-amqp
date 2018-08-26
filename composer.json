@@ -1,0 +1,20 @@
+{
+  "name": "ranold/EasyYiiAmqp",
+  "description": "Basic helper class for using PhpAmqpLib with Yii 1.1.x",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dmitry Antonov",
+      "email": "mail@ranold.ru"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "php-amqplib/php-amqplib": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "ranold\\EasyYiiAmqp\\": "src/"
+    }
+  },
+}

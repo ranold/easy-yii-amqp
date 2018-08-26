@@ -108,6 +108,9 @@ class Client extends \CApplicationComponent
         $this->getChannel()->basic_consume($queueName, '', false, true, false, false, $callback);
     }
 
+    /**
+     * This method should be run to continiously wait for new messages
+     */
     public function wait()
     {
         while (count($this->getChannel()->callbacks)) {
